@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+    /*Tag Seçici*/
+    h1{
+        color: steelblue;
+    }
+    /*class seçici*/
+    .Ozel{
+        color: rgb(36, 156, 96);
+    }
+    /*ID Seçici*/
+    #tek{
+        color: #333;
+    }
+    /*Grup Seçici*/
+    h2,h3{
+        color: yellowgreen;
+    }
+    /*Divin içindeki h4 için color*/
+    div h4{
+        color: tomato;
+    }
+    div+h4{
+        color: gray;
+    }
+    div~h4{
+        color: purple;
+    }
+    div>h4{
+        color:skyblue ;
+    }
+    a{
+        color: orange;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 20px;
+        text-decoration: none;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+    a:visited{
+        color: red;
+    }
+    input:focus{
+        border: 5px solid orange;
+    }
+    /*
+    li:nth-child(odd){
+        background-color: gray;
+        color: orangered;
+    }
+    li:nth-child(even){
+        background-color: whitesmoke;
+        color: orange;
+    }*/
+    li:nth-child(2n+1){
+        background-color: whitesmoke;
+        color: orange;
+    }
+    li:first-child{
+        background-color: blue;
+    }
+    li:last-child{
+        background-color: red;
+    }
+    p::first-letter{
+        color: seagreen;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 24px;
+    }
+    span::before{
+        content: "Yalnız ";
+    }
+    span::after{
+        content: " TL";
+    }
+    </style>
+</head>
+<body>
+    <!--
+        CSS:Coscading Style Sheets(Katmalı stiller)
+
+        Css stilleri şuralara yazılır.
+        ***1-Taga "style" attribute.
+        ** 2-Head "style" tagi
+        *  3-Harici Dosya "stle.css"(önerilen kullanım)
+        
+        Selectors(Seçiciler)
+        1-Tag o tagli şeylere uygulanır.
+        2-class "." ile yazılır. o classın içerisindeki stili uygular.
+        3-id "#" unique olmak zorunda.  
+    -->
+
+    <h1>Merhaba CSS</h1>
+
+    <h1 style="color:darkorchid;">Merhaba CSS</h1>
+    <h1 style="color:darkorchid;">Merhaba CSS</h1>
+    <h1 style="color:darkorchid;">Merhaba CSS</h1>
+
+    <h1>Css</h1>
+
+    <h1 class="Ozel">Deneme 123</h1>
+    <h1 class="Ozel">Deneme 456</h1>
+
+    <h1 id="tek">Deneme 789</h1>
+
+    <h2>Paragraf 1</h2>
+    <h3>Paragraf 2</h3>
+
+    <h4>Div dışında üst</h4>
+
+    <div>
+        <h4>Div içinde</h4>
+        <span><h4>neden olmadı?</h4></span>
+    </div>
+
+    <h4>Div dışında alt</h4>
+
+    <h4>div dışında</h4>
+    <h3>div</h3>
+
+    <a href="index.html">Link 1</a>
+    <a href="http://www.google.com">Link 2</a>
+    <a href="">Link 3</a>
+    <a href="">Link 4</a>
+
+
+    <form action="">
+        <input type="text" name="" id="">
+        <input type="text" name="" id="">
+        <input type="submit" value="Gönder">
+    </form>
+    <ul>
+        <li>AAA</li>
+        <li>BBB</li>
+        <li>CCC</li>
+        <li>DDD</li>
+        <li>EEE</li>
+    </ul>
+    <br><br><br><br>
+    <p>Merhaba Dünya... bla bla bla</p>
+
+    <span>123</span>
+</body>
+</html>
